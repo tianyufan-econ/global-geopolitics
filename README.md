@@ -7,14 +7,16 @@ The Global Geopolitical Events Database compiles 833,485 major bilateral politic
 
 ## Access and Usage
 
-The database will be publicly available later this year:
-- Dynamic geopolitical alignment measures for all country pairs
-- Complete bilateral event records with classifications and scores
+Email me for a subsample—we have G8 + India + China ready to share.
+
+The full database will be publicly available in phases:
+- Dynamic geopolitical alignment measures for all country pairs (early next year)
+- Complete bilateral event records with classifications and scores (later next year)
 
 ## References
 
 **Tianyu Fan (2025).** "The Geopolitical Determinants of Economic Growth, 1960–2019." [[arXiv]](https://arxiv.org/abs/2504.04047)
 
-**Tianyu Fan, Mai Wo, and Wei Xiang (2025).** "Geopolitical Barriers to Globalization."
+**Tianyu Fan, Mai Wo, and Wei Xiang (2025).** "Geopolitical Barriers to Globalization." [[arXiv]](https://arxiv.org/abs/2509.12084)
 
 **Tianyu Fan, Jizhou Liu, and Wei Xiang (2025).** "Anatomy of Geopolitical Dynamics."
