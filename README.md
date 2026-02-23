@@ -7,12 +7,12 @@ The Global Geopolitical Events Database compiles 833,485 major bilateral politic
 
 ## Access and Usage
 
-Email me for a subsample—we have G8 + India + China ready to share.
+A sample for G8 + India + China is available in the [Geopolitical_Scores](./Geopolitical_Scores) folder. For specific data samples, please contact me.
 
 The full database will be publicly available in phases:
 
-- Geopolitical alignment measures for all country pairs (early next year)
-- Complete bilateral event records with classifications and scores (later next year)
+- Geopolitical alignment measures for all country pairs (this summer)
+- Complete bilateral event records with classifications and scores (later this year)
 
 ## References
 
