@@ -16,8 +16,8 @@ The full database will be publicly available in phases:
 
 ## References
 
-**Tianyu Fan (2025).** "The Geopolitical Determinants of Economic Growth, 1960–2014." [[arXiv]](https://arxiv.org/abs/2507.04833)
+**Tianyu Fan (2025).** "The Geopolitical Determinants of Economic Growth, 1960–2024." [[arXiv]](https://arxiv.org/abs/2507.04833)
 
 **Tianyu Fan, Mai Wo, and Wei Xiang (2025).** "Geopolitical Barriers to Globalization." [[arXiv]](https://arxiv.org/abs/2509.12084)
 
-**Tianyu Fan, Jizhou Liu, and Wei Xiang (2025).** "Measuring Global Geopolitical Alignment."
+**Tianyu Fan, Jizhou Liu, and Wei Xiang (2026).** "Measuring Global Geopolitical Alignment."
