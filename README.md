@@ -9,6 +9,7 @@ The Global Geopolitical Events Database compiles 833,485 major bilateral politic
 Bilateral geopolitical alignment scores for G10 dyads (United States, United Kingdom, France, Germany, Italy, Canada, Japan, Russia, China, India) are available in the [Geopolitical Scores](./Geopolitical_Scores) folder.
 
 The full database will be released in phases alongside the companion papers:
+
 - Country-level geopolitical alignment indices for all 193 countries
 - Bilateral alignment scores for all country pairs
 - Complete event-level records with CAMEO classifications and Goldstein scores
@@ -20,8 +21,6 @@ For early access to specific country pairs or samples, please contact Tianyu Fan
 If you use data from this database, please cite:
 
 > Tianyu Fan (2025). "The Geopolitical Determinants of Economic Growth, 1960–2024."
-
-For trade applications, also cite:
 
 > Tianyu Fan, Mai Wo, and Wei Xiang (2025). "Geopolitical Barriers to Globalization."
 
