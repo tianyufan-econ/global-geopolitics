@@ -30,4 +30,4 @@ If you use data from this database, please cite:
 
 **Tianyu Fan, Mai Wo, and Wei Xiang (2025).** "Geopolitical Barriers to Globalization." [[arXiv]](https://arxiv.org/abs/2509.12084)
 
-**Tianyu Fan, Jizhou Liu, and Wei Xiang (2026).** "Measuring Global Geopolitical Alignment." *Coming soon.*
+**Tianyu Fan, Jizhou Liu, and Wei Xiang (2026).** "The Structure of International Order, 1950 - 2024." *Coming soon.*
