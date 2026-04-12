@@ -6,7 +6,7 @@ The Global Geopolitical Events Database compiles 833,485 major bilateral politic
 
 ## Data Access
 
-Bilateral geopolitical alignment scores for G10 dyads (United States, United Kingdom, France, Germany, Italy, Canada, Japan, Russia, China, India) are available in the [Geopolitical Scores](./Geopolitical_Scores) folder.
+Bilateral geopolitical alignment scores for G10, G20, and Major 32 country dyads are available in the [Geopolitical Scores](./Geopolitical_Scores) folder.
 
 The full database will be released in phases alongside the companion papers:
 
