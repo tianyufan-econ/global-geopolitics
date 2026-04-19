@@ -1,8 +1,61 @@
 # Global Geopolitical Events Database
 
-## Overview
+**Version 1.0 · April 2026**
 
 The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral political events between all 193 UN member states from 1950 to 2024. Using large language models to systematically identify, classify, and score events, we construct dynamic measures of bilateral geopolitical alignment that capture the timing and intensity of international relationships.
+
+---
+
+## This Release
+
+Bilateral geopolitical alignment scores for **4,332 dyads** -- all country pairs involving at least one of the 24 major nations, paired with all 193 UN member states -- covering **1950--2024** (324,900 dyad-year observations).
+
+**All bilateral data underlying the empirical results in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth*, is contained in this release.**
+
+- **Data:** [`Geopolitical_Scores/`](./Geopolitical_Scores/)
+- **Codebook:** [PDF](./Geopolitical_Scores/codebook.pdf) · [Markdown](./Geopolitical_Scores/codebook.md)
+- **Format:** UTF-8 CSV with comma delimiters (readable in R, Python, Stata, Excel)
+
+---
+
+## Citation
+
+If you use data from this database, please cite:
+
+> Tianyu Fan (2025). "Measuring Geopolitical Alignment and Economic Growth." [[arXiv]](https://arxiv.org/abs/2507.04833)
+>
+> Tianyu Fan, Mai Wo, and Wei Xiang (2025). "Geopolitical Barriers to Globalization." [[arXiv]](https://arxiv.org/abs/2509.12084)
+
+### BibTeX
+
+```bibtex
+@unpublished{fan2025geopolitical,
+  author = {Fan, Tianyu},
+  title  = {Measuring Geopolitical Alignment and Economic Growth},
+  year   = {2025},
+  note   = {arXiv:2507.04833}
+}
+
+@unpublished{fanwoxiang2025barriers,
+  author = {Fan, Tianyu and Wo, Mai and Xiang, Wei},
+  title  = {Geopolitical Barriers to Globalization},
+  year   = {2025},
+  note   = {arXiv:2509.12084}
+}
+```
+
+---
+
+## Forthcoming Releases
+
+Additional data releases are planned alongside future companion papers:
+
+- Bilateral alignment scores for all 18,528 UN-member dyads
+- Complete event-level records with CAMEO classifications and Goldstein scores
+
+For access to additional data, please contact Tianyu Fan (tianyu.fan@yale.edu).
+
+---
 
 ## Methodology
 
@@ -12,24 +65,7 @@ The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral p
 
 **Score construction.** The yearly static score averages all Goldstein scores for a dyad-year, normalized to [-1, +1]. The dynamic score incorporates relationship persistence via an exponential decay model: new events update the score in proportion to their share of the effective cumulative event stock, while years without events see both the score and event stock depreciate at rate 0.3. See the [codebook](./Geopolitical_Scores/codebook.pdf) for full equations and variable definitions.
 
-## Data Access
-
-Bilateral geopolitical alignment scores for 4,332 dyads -- all country pairs involving at least one of the 24 major nations, paired with all 193 UN member states -- are available in the [Geopolitical_Scores](./Geopolitical_Scores) folder, along with a detailed [codebook](./Geopolitical_Scores/codebook.pdf). This is the sample used in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth*.
-
-The full database will be released in phases alongside the companion papers:
-
-- Bilateral alignment scores for all 18,528 UN-member dyads
-- Complete event-level records with CAMEO classifications and Goldstein scores
-
-For early access to specific country pairs or samples, please contact Tianyu Fan (tianyu.fan@yale.edu).
-
-## Citation
-
-If you use data from this database, please cite:
-
-> Tianyu Fan (2025). "Measuring Geopolitical Alignment and Economic Growth."
-
-> Tianyu Fan, Mai Wo, and Wei Xiang (2025). "Geopolitical Barriers to Globalization."
+---
 
 ## References
 
