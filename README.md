@@ -14,12 +14,12 @@ The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral p
 
 ## Data Access
 
-Bilateral geopolitical alignment scores for the 24 major-nation dyads (276 pairs) are available in the [Geopolitical_Scores](./Geopolitical_Scores) folder, along with a detailed [codebook](./Geopolitical_Scores/codebook.pdf).
+Bilateral geopolitical alignment scores for 4,332 dyads -- all country pairs involving at least one of the 24 major nations, paired with all 193 UN member states -- are available in the [Geopolitical_Scores](./Geopolitical_Scores) folder, along with a detailed [codebook](./Geopolitical_Scores/codebook.pdf). This is the sample used in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth*.
 
 The full database will be released in phases alongside the companion papers:
 
+- Bilateral alignment scores for all 18,528 UN-member dyads (released with Fan, Liu, and Xiang, 2026)
 - Country-level geopolitical alignment indices for all 193 countries
-- Bilateral alignment scores for all country pairs
 - Complete event-level records with CAMEO classifications and Goldstein scores
 
 For early access to specific country pairs or samples, please contact Tianyu Fan (tianyu.fan@yale.edu).

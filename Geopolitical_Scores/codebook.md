@@ -6,19 +6,21 @@ date: ""
 
 # Dataset Overview
 
-**File:** `dyad_geopolitical_scores_Major24.csv`
+**File:** `dyad_geopolitical_scores_Major24xAll.csv`
 
 **Unit of observation:** Dyad-year (undirected, alphabetically ordered by ISO 3166-1 alpha-3 code)
 
 **Time coverage:** 1950--2024 (75 years)
 
-**Country coverage:** 24 major nations, comprising 276 unique dyads
+**Country coverage:** 4,332 dyads in which at least one country belongs to the 24 major nations. Each of the 24 major nations is paired with all 193 UN member states.
 
-**Total observations:** 20,700 (276 dyads $\times$ 75 years)
+**Total observations:** 324,900 (4,332 dyads $\times$ 75 years)
 
 **Panel type:** Balanced (all dyad-year cells present; zero-event cells recorded as 0)
 
 **Source data:** Global Geopolitical Events (GGE) Database, v1
+
+**Scope note:** This file covers the sample used in *Fan (2025), "Measuring Geopolitical Alignment and Economic Growth"* -- all bilateral pairs involving at least one of the 24 major nations. The full-coverage panel (all 18,528 UN-member dyads) will be released alongside the companion measurement paper, *Fan, Liu, and Xiang (2026), "The Structure of International Order, 1950--2024."*
 
 ## Major 24 Nations
 
@@ -214,16 +216,16 @@ Scores are calibrated against CAMEO root codes and adjusted for bilateral contex
 
 # Usage Notes
 
-1. **Balanced panel.** The dataset includes all 276 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`).
+1. **Balanced panel.** The dataset includes all 4,332 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`).
 
 2. **Dyad directionality.** Dyads are undirected. The two ISO3 codes are always arranged alphabetically (e.g., `CHN-USA`, never `USA-CHN`).
 
 3. **Historical entities.** Country codes reflect present-day ISO3 assignments. Events involving predecessor states (e.g., the Soviet Union before 1991) are coded under the successor state's code (e.g., `RUS`).
 
 4. **Recommended usage:**
-   - Use `geo_score` for cross-sectional analysis or when focusing on contemporaneous relations.
-   - Use `geo_score_dyn` for time-series analysis requiring smooth transitions and accounting for relationship persistence.
-   - Use `geo_score_ma` for robustness checks or to reduce measurement error from year-to-year volatility.
+   - Use `geo_score_dyn` for cross-sectional analysis, as it reflects the cumulative geopolitical alignment status of each dyad at a given point in time.
+   - Use `geo_score_dyn` for time-series analysis, with `geo_score` as a robustness check to verify that results are not driven by the smoothing procedure.
+   - Use `geo_score_ma` as an additional robustness check or to reduce measurement error from year-to-year volatility.
 
 5. **Interpretation of sign:**
    - Negative values indicate conflict, hostility, or deteriorating relations.
