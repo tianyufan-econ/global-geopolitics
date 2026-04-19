@@ -18,7 +18,7 @@ Bilateral geopolitical alignment scores for 4,332 dyads -- all country pairs inv
 
 The full database will be released in phases alongside the companion papers:
 
-- Bilateral alignment scores for all 18,528 UN-member dyads (released with Fan, Liu, and Xiang, 2026)
+- Bilateral alignment scores for all 18,528 UN-member dyads
 - Complete event-level records with CAMEO classifications and Goldstein scores
 
 For early access to specific country pairs or samples, please contact Tianyu Fan (tianyu.fan@yale.edu).
