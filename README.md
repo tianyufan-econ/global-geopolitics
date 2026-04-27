@@ -1,6 +1,6 @@
 # Global Geopolitical Events Database
 
-**Version 1.0 · April 2026**
+**Version 1.1 · April 2026**
 
 The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral political events between all 193 UN member states from 1950 to 2024. Using large language models to systematically identify, classify, and score events, we construct dynamic measures of bilateral geopolitical alignment that capture the timing and intensity of international relationships.
 
@@ -8,9 +8,9 @@ The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral p
 
 ## This Release
 
-Bilateral geopolitical alignment scores for **4,332 dyads** -- all country pairs involving at least one of the 24 major nations, paired with all 193 UN member states -- covering **1950--2024** (324,900 dyad-year observations).
+Bilateral geopolitical alignment scores for **9,212 dyads** -- approximately half of all UN-member dyads -- covering **1950--2024** (690,900 dyad-year observations). The release contains every dyad in which at least one country belongs to a 56-country set defined as the union of (i) the 32 major economies, (ii) OECD member states, and (iii) EU member states.
 
-**All bilateral data underlying the empirical results in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth*, is contained in this release.**
+**This release contains all bilateral data underlying the empirical results in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth* and Fan, Wo, and Xiang (2025), *Geopolitical Barriers to Globalization*.**
 
 - **Data:** [`Geopolitical_Scores/`](./Geopolitical_Scores/)
 - **Codebook:** [PDF](./Geopolitical_Scores/codebook.pdf) · [Markdown](./Geopolitical_Scores/codebook.md)

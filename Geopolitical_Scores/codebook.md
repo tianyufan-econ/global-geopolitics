@@ -6,34 +6,84 @@ date: ""
 
 # Dataset Overview
 
-**File:** `dyad_geopolitical_scores_Major24xAll.csv`
+**File:** `dyad_geopolitical_scores_Major56.csv`
 
 **Unit of observation:** Dyad-year (undirected, alphabetically ordered by ISO 3166-1 alpha-3 code)
 
 **Time coverage:** 1950--2024 (75 years)
 
-**Country coverage:** 4,332 dyads in which at least one country belongs to the 24 major nations. Each of the 24 major nations is paired with all 193 UN member states.
+**Country coverage:** 9,212 dyads in which at least one country belongs to the union of three groups: the 32 major economies (Major32), the 38 OECD member states, and the 27 EU member states. The union covers 56 unique countries; each is paired with all 193 UN member states.
 
-**Total observations:** 324,900 (4,332 dyads $\times$ 75 years)
+**Total observations:** 690,900 (9,212 dyads $\times$ 75 years)
 
 **Panel type:** Balanced (all dyad-year cells present; zero-event cells recorded as 0)
 
 **Source data:** Global Geopolitical Events (GGE) Database, v1
 
-**Scope note:** This file covers the sample used in *Fan (2025), "Measuring Geopolitical Alignment and Economic Growth"* -- all bilateral pairs involving at least one of the 24 major nations. The full-coverage panel (all 18,528 UN-member dyads) will be released alongside the companion measurement paper, *Fan, Liu, and Xiang (2026), "The Structure of International Order, 1950--2024."*
+**Scope note:** This file is intended to cover the main empirical samples of two papers: *Fan (2025), "Measuring Geopolitical Alignment and Economic Growth"* (which uses 24 of the 32 major economies) and *Fan, Wo, and Xiang (2025), "Geopolitical Barriers to Globalization"* (which uses the 32 major economies, accounting for the bulk of global trade). The OECD and EU memberships are included for broader analytical use. The full-coverage panel (all 18,528 UN-member dyads) will be released alongside the companion measurement paper, *Fan, Liu, and Xiang (2026), "The Structure of International Order, 1950--2024."*
 
-## Major 24 Nations
+## Country Coverage
 
-| Code | Country | Code | Country | Code | Country |
-|------|---------|------|---------|------|---------|
-| ARG | Argentina | ESP | Spain | KOR | South Korea |
-| AUS | Australia | FRA | France | MEX | Mexico |
-| BEL | Belgium | GBR | United Kingdom | NLD | Netherlands |
-| BRA | Brazil | IDN | Indonesia | POL | Poland |
-| CAN | Canada | IND | India | RUS | Russia |
-| CHE | Switzerland | ITA | Italy | SAU | Saudi Arabia |
-| CHN | China | JPN | Japan | TUR | Turkey |
-| DEU | Germany | DNK | Denmark | USA | United States |
+The 56 covered countries are the union of three groups (M = Major32, O = OECD, E = EU):
+
+| ISO3 | Country | M | O | E |
+|------|---------|:-:|:-:|:-:|
+| ARG | Argentina | * | | |
+| AUS | Australia | * | * | |
+| AUT | Austria | * | * | * |
+| BEL | Belgium | * | * | * |
+| BGR | Bulgaria | | | * |
+| BRA | Brazil | * | | |
+| CAN | Canada | * | * | |
+| CHE | Switzerland | * | * | |
+| CHL | Chile | | * | |
+| CHN | China | * | | |
+| COL | Colombia | | * | |
+| CRI | Costa Rica | | * | |
+| CYP | Cyprus | | | * |
+| CZE | Czechia | | * | * |
+| DEU | Germany | * | * | * |
+| DNK | Denmark | * | * | * |
+| ESP | Spain | * | * | * |
+| EST | Estonia | | * | * |
+| FIN | Finland | | * | * |
+| FRA | France | * | * | * |
+| GBR | United Kingdom | * | * | |
+| GRC | Greece | | * | * |
+| HRV | Croatia | | | * |
+| HUN | Hungary | | * | * |
+| IDN | Indonesia | * | | |
+| IND | India | * | | |
+| IRL | Ireland | | * | * |
+| IRN | Iran | * | | |
+| IRQ | Iraq | * | | |
+| ISL | Iceland | | * | |
+| ISR | Israel | | * | |
+| ITA | Italy | * | * | * |
+| JPN | Japan | * | * | |
+| KOR | South Korea | * | * | |
+| LTU | Lithuania | | * | * |
+| LUX | Luxembourg | | * | * |
+| LVA | Latvia | | * | * |
+| MEX | Mexico | * | * | |
+| MLT | Malta | | | * |
+| NGA | Nigeria | * | | |
+| NLD | Netherlands | * | * | * |
+| NOR | Norway | | * | |
+| NZL | New Zealand | | * | |
+| PHL | Philippines | * | | |
+| POL | Poland | * | * | * |
+| PRT | Portugal | | * | * |
+| ROU | Romania | | | * |
+| RUS | Russia | * | | |
+| SAU | Saudi Arabia | * | | |
+| SVK | Slovakia | | * | * |
+| SVN | Slovenia | | * | * |
+| SWE | Sweden | * | * | * |
+| TUR | Türkiye | * | * | |
+| USA | United States | * | * | |
+| VEN | Venezuela | * | | |
+| ZAF | South Africa | * | | |
 
 ---
 
@@ -216,7 +266,7 @@ Scores are calibrated against CAMEO root codes and adjusted for bilateral contex
 
 # Usage Notes
 
-1. **Balanced panel.** The dataset includes all 4,332 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`).
+1. **Balanced panel.** The dataset includes all 9,212 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`).
 
 2. **Dyad directionality.** Dyads are undirected. The two ISO3 codes are always arranged alphabetically (e.g., `CHN-USA`, never `USA-CHN`).
 
