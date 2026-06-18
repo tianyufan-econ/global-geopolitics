@@ -6,84 +6,27 @@ date: ""
 
 # Dataset Overview
 
-**File:** `dyad_geopolitical_scores_Major56.csv`
+**File:** `dyad_geopolitical_scores.zip` -- a compressed archive (~28 MB) containing a single CSV, `dyad_geopolitical_scores.csv` (~93 MB uncompressed). Unzip before loading.
 
 **Unit of observation:** Dyad-year (undirected, alphabetically ordered by ISO 3166-1 alpha-3 code)
 
 **Time coverage:** 1950--2024 (75 years)
 
-**Country coverage:** 9,212 dyads in which at least one country belongs to the union of three groups: the 32 major economies (Major32), the 38 OECD member states, and the 27 EU member states. The union covers 56 unique countries; each is paired with all 193 UN member states.
+**Country coverage:** All 193 UN member states, comprising 18,528 unique dyads
 
-**Total observations:** 690,900 (9,212 dyads $\times$ 75 years)
+**Total observations:** 1,389,600 (18,528 dyads $\times$ 75 years)
 
 **Panel type:** Balanced (all dyad-year cells present; zero-event cells recorded as 0)
 
 **Source data:** Global Geopolitical Events (GGE) Database, v1
 
-**Scope note:** This file is intended to cover the main empirical samples of two papers: *Fan (2025), "Measuring Geopolitical Alignment and Economic Growth"* (which uses 24 of the 32 major economies) and *Fan, Wo, and Xiang (2025), "Geopolitical Barriers to Globalization"* (which uses the 32 major economies, accounting for the bulk of global trade). The OECD and EU memberships are included for broader analytical use. The full-coverage panel (all 18,528 UN-member dyads) will be released alongside the companion measurement paper, *Fan, Liu, and Xiang (2026), "The Structure of International Order, 1950--2024."*
+**Total events:** 833,485 bilateral political events[^events]
 
-## Country Coverage
+[^events]: The `number_of_events` column counts events with a valid Goldstein score and sums to 833,528 across the panel; the 833,485 headline additionally requires a CAMEO root code.
 
-The 56 covered countries are the union of three groups (M = Major32, O = OECD, E = EU):
+**Dyad-years with at least one event:** 417,863 (30.1%)
 
-| ISO3 | Country | M | O | E |
-|------|---------|:-:|:-:|:-:|
-| ARG | Argentina | * | | |
-| AUS | Australia | * | * | |
-| AUT | Austria | * | * | * |
-| BEL | Belgium | * | * | * |
-| BGR | Bulgaria | | | * |
-| BRA | Brazil | * | | |
-| CAN | Canada | * | * | |
-| CHE | Switzerland | * | * | |
-| CHL | Chile | | * | |
-| CHN | China | * | | |
-| COL | Colombia | | * | |
-| CRI | Costa Rica | | * | |
-| CYP | Cyprus | | | * |
-| CZE | Czechia | | * | * |
-| DEU | Germany | * | * | * |
-| DNK | Denmark | * | * | * |
-| ESP | Spain | * | * | * |
-| EST | Estonia | | * | * |
-| FIN | Finland | | * | * |
-| FRA | France | * | * | * |
-| GBR | United Kingdom | * | * | |
-| GRC | Greece | | * | * |
-| HRV | Croatia | | | * |
-| HUN | Hungary | | * | * |
-| IDN | Indonesia | * | | |
-| IND | India | * | | |
-| IRL | Ireland | | * | * |
-| IRN | Iran | * | | |
-| IRQ | Iraq | * | | |
-| ISL | Iceland | | * | |
-| ISR | Israel | | * | |
-| ITA | Italy | * | * | * |
-| JPN | Japan | * | * | |
-| KOR | South Korea | * | * | |
-| LTU | Lithuania | | * | * |
-| LUX | Luxembourg | | * | * |
-| LVA | Latvia | | * | * |
-| MEX | Mexico | * | * | |
-| MLT | Malta | | | * |
-| NGA | Nigeria | * | | |
-| NLD | Netherlands | * | * | * |
-| NOR | Norway | | * | |
-| NZL | New Zealand | | * | |
-| PHL | Philippines | * | | |
-| POL | Poland | * | * | * |
-| PRT | Portugal | | * | * |
-| ROU | Romania | | | * |
-| RUS | Russia | * | | |
-| SAU | Saudi Arabia | * | | |
-| SVK | Slovakia | | * | * |
-| SVN | Slovenia | | * | * |
-| SWE | Sweden | * | * | * |
-| TUR | Türkiye | * | * | |
-| USA | United States | * | * | |
-| VEN | Venezuela | * | | |
-| ZAF | South Africa | * | | |
+**Scope note:** This release provides full-coverage **aggregate** alignment scores for all 18,528 UN-member dyads. The empirical samples of *Fan (2025), "Measuring Geopolitical Alignment and Economic Growth"* (24 major economies) and *Fan, Wo, and Xiang (2025), "Geopolitical Barriers to Globalization"* (32 major economies) are subsets of this panel. The domain decomposition and structural analysis remain forthcoming with the companion measurement paper, *Fan, Liu, and Xiang (2026), "The Structure of International Order, 1950--2024";* the aggregate panel here does not depend on that paper's release.
 
 ---
 
@@ -177,8 +120,6 @@ The underlying Goldstein Scale ranges from $-10$ (maximum conflict) to $+10$ (ma
 
 The underlying event data were compiled by a large language model (Gemini 2.5 Pro) following a structured prompt. Each event represents a distinct significant bilateral political interaction between two countries in a given year.
 
-**Total events in the GGE database:** 833,485 across all 18,528 dyads among 193 UN member states, 1950--2024.
-
 ## Event Identification Pipeline
 
 The LLM follows a 5-step analytical procedure for each dyad-year:
@@ -266,9 +207,9 @@ Scores are calibrated against CAMEO root codes and adjusted for bilateral contex
 
 # Usage Notes
 
-1. **Balanced panel.** The dataset includes all 9,212 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`).
+1. **Balanced panel.** The dataset includes all 18,528 dyad-year combinations within the time range, including years with no events (`number_of_events = 0`). Approximately 70% of dyad-years have zero events, reflecting the sparsity of bilateral interactions among distant or small-state pairs.
 
-2. **Dyad directionality.** Dyads are undirected. The two ISO3 codes are always arranged alphabetically (e.g., `CHN-USA`, never `USA-CHN`).
+2. **Dyad ordering.** Dyads are undirected. The two ISO3 codes are always arranged alphabetically (e.g., `CHN-USA`, never `USA-CHN`).
 
 3. **Historical entities.** Country codes reflect present-day ISO3 assignments. Events involving predecessor states (e.g., the Soviet Union before 1991) are coded under the successor state's code (e.g., `RUS`).
 
@@ -286,8 +227,8 @@ Scores are calibrated against CAMEO root codes and adjusted for bilateral contex
 
 # References
 
-Tianyu Fan (2025). "Measuring Geopolitical Alignment and Economic Growth." *Working Paper, Yale University.* [arXiv:2507.04833](https://arxiv.org/abs/2507.04833)
+Tianyu Fan (2025). "Measuring Geopolitical Alignment and Economic Growth." *Working Paper, Princeton University.* [arXiv:2507.04833](https://arxiv.org/abs/2507.04833)
 
-Tianyu Fan, Mai Wo, and Wei Xiang (2025). "Geopolitical Barriers to Globalization." *Working Paper, Yale University.* [arXiv:2509.12084](https://arxiv.org/abs/2509.12084)
+Tianyu Fan, Mai Wo, and Wei Xiang (2025). "Geopolitical Barriers to Globalization." *Working Paper, Princeton University.* [arXiv:2509.12084](https://arxiv.org/abs/2509.12084)
 
-Tianyu Fan, Jizhou Liu, and Wei Xiang (2026). "The Structure of International Order, 1950--2024." *Working Paper, Yale University.* *Coming soon.*
+Tianyu Fan, Jizhou Liu, and Wei Xiang (2026). "The Structure of International Order, 1950--2024." *Working Paper, Princeton University.* *Coming soon.*

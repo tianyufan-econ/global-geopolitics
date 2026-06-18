@@ -1,6 +1,6 @@
 # Global Geopolitical Events Database
 
-**Version 1.1 · April 2026**
+**Version 1.0 · June 2026**
 
 The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral political events between all 193 UN member states from 1950 to 2024. Using large language models to systematically identify, classify, and score events, we construct dynamic measures of bilateral geopolitical alignment that capture the timing and intensity of international relationships.
 
@@ -8,13 +8,13 @@ The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral p
 
 ## This Release
 
-Bilateral geopolitical alignment scores for **9,212 dyads** -- approximately half of all UN-member dyads -- covering **1950--2024** (690,900 dyad-year observations). The release contains every dyad in which at least one country belongs to a 56-country set defined as the union of (i) the 32 major economies, (ii) OECD member states, and (iii) EU member states.
+Bilateral geopolitical alignment scores for **all 18,528 UN-member dyads** -- every pair among the 193 UN member states -- covering **1950--2024** (1,389,600 dyad-year observations).
 
-**This release contains all bilateral data underlying the empirical results in Fan (2025), *Measuring Geopolitical Alignment and Economic Growth* and Fan, Wo, and Xiang (2025), *Geopolitical Barriers to Globalization*.**
+The empirical samples of Fan (2025), *Measuring Geopolitical Alignment and Economic Growth* (24 major economies), and Fan, Wo, and Xiang (2025), *Geopolitical Barriers to Globalization* (32 major economies), are subsets of this full panel.
 
-- **Data:** [`Geopolitical_Scores/`](./Geopolitical_Scores/)
+- **Data:** [`Geopolitical_Scores/dyad_geopolitical_scores.zip`](./Geopolitical_Scores/dyad_geopolitical_scores.zip) -- compressed CSV (~28 MB; unzips to a single ~93 MB file)
 - **Codebook:** [PDF](./Geopolitical_Scores/codebook.pdf) · [Markdown](./Geopolitical_Scores/codebook.md)
-- **Format:** UTF-8 CSV with comma delimiters (readable in R, Python, Stata, Excel)
+- **Format:** UTF-8 CSV with comma delimiters, readable in R, Python, and Stata. The full panel has 1,389,600 rows, which exceeds Excel's row limit -- use R, Python, or Stata for the complete file.
 
 ---
 
@@ -50,10 +50,9 @@ If you use data from this database, please cite:
 
 Additional data releases are planned alongside future companion papers:
 
-- Bilateral alignment scores for all 18,528 UN-member dyads
 - Complete event-level records with CAMEO classifications and Goldstein scores
 
-For access to additional data, please contact Tianyu Fan (tianyu.fan@yale.edu).
+For access to additional data, please contact Tianyu Fan (tianyufan.econ@gmail.com).
 
 ---
 
