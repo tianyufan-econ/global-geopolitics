@@ -10,7 +10,7 @@ The Global Geopolitical Events (GGE) Database compiles 833,485 major bilateral p
 
 Bilateral geopolitical alignment scores for **all 18,528 UN-member dyads** -- every pair among the 193 UN member states -- covering **1950--2024** (1,389,600 dyad-year observations).
 
-The empirical samples of Fan (2025), *Measuring Geopolitical Alignment and Economic Growth* (24 major economies), and Fan, Wo, and Xiang (2025), *Geopolitical Barriers to Globalization* (32 major economies), are subsets of this full panel.
+The empirical samples of Fan (2025), *Measuring Geopolitical Alignment and Economic Growth* (24 major economies), and Fan, Wo, and Xiang (2025), *Geopolitical Barriers to Globalization*, are subsets of this full panel.
 
 - **Data:** [`Geopolitical_Scores/dyad_geopolitical_scores.zip`](./Geopolitical_Scores/dyad_geopolitical_scores.zip) -- compressed CSV (~28 MB; unzips to a single ~93 MB file)
 - **Codebook:** [PDF](./Geopolitical_Scores/codebook.pdf) · [Markdown](./Geopolitical_Scores/codebook.md)
